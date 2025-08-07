@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((a and (not b)) or (b and c)) imply (a or c))</formula>
+    <graphicalposition>
+      <x>698</x>
+      <y>595</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(a or c)</formula>
+        <graphicalposition>
+          <x>698</x>
+          <y>569</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>((a and (not b)) or (b and c))</formula>
+            <graphicalposition>
+              <x>582</x>
+              <y>543</y>
+            </graphicalposition>
+            <children />
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>755</x>
+              <y>543</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>a</formula>
+                <graphicalposition>
+                  <x>755</x>
+                  <y>528</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(a and (not b))</formula>
+                    <graphicalposition>
+                      <x>755</x>
+                      <y>502</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>871</x>
+              <y>543</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>871</x>
+                  <y>528</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(b and c)</formula>
+                    <graphicalposition>
+                      <x>871</x>
+                      <y>502</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

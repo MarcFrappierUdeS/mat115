@@ -1,0 +1,117 @@
+a) La carré a est le plus petit objet de sa ligne
+
+  Square(a)
+&
+  !x.
+  (
+         x /= a
+       &
+         SameRow(a,x)
+    =>
+       Smaller(a,x)
+  )
+
+b) Les petits triangles sont sur la même colonne si, et seulement si, tous les pentagones sont plus grands que tous les carrés.
+
+    !x.
+    (
+      !y.
+      (
+             Triangle(x)
+           &
+             Triangle(y)
+           &
+             Small(x)
+           &
+             Small(y)
+        =>
+           SameCol(x,y)
+      )
+    )
+<=>
+    !x.
+    (
+      !y.
+      (
+             Pentagon(x)
+           &
+             Square(y)
+        =>
+           Smaller(y,x)
+      )
+    )
+
+c) Une condition nécessaire pour que les triangles soient triés en ordre croissant de taille de gauche à droite est que les triangles soient tous sur la même ligne.
+
+   !x.
+   (
+     !y.
+     (
+            Triangle(x)
+          &
+            Triangle(y)
+          &
+            x /= y
+          &
+            LeftOf(x,y)
+       =>
+          not
+              Smaller(y,x)
+     )
+   )
+=>
+   !x.
+   (
+     !y.
+     (
+            Triangle(x)
+          &
+            Triangle(y)
+       =>
+          SameRow(x,y)
+     )
+   )
+
+d) Il y a deux carrés sur une même colonne qui sont plus grands que tous les autres objets.
+
+#x.
+(
+  #y.
+  (
+      Square(x)
+    &
+      Square(y)
+    &
+      x /= y
+    &
+      SameCol(x,y)
+    &
+      !z.
+      (
+             z /= x
+           &
+             z /= y
+        =>
+             Smaller(z,x)
+           &
+             Smaller(z,y)
+      )
+  )
+)
+
+e) Soit tous les carrés sont grands, soit tous les triangles sont grands.
+
+    not
+        !x.
+        (
+             Square(x)
+          =>
+             Large(x)
+        )
+<=>
+    !x.
+    (
+         Triangle(x)
+      =>
+         Large(x)
+    )

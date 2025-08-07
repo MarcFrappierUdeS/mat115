@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((not (a or b)) and b) imply a)</formula>
+    <graphicalposition>
+      <x>734</x>
+      <y>618</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>a</formula>
+        <graphicalposition>
+          <x>734</x>
+          <y>603</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>734</x>
+              <y>583</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(a or b)</formula>
+                <graphicalposition>
+                  <x>647</x>
+                  <y>557</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>b</formula>
+                    <graphicalposition>
+                      <x>647</x>
+                      <y>537</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((not (a or b)) and b)</formula>
+                        <graphicalposition>
+                          <x>647</x>
+                          <y>511</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not (a or b))</formula>
+                <graphicalposition>
+                  <x>821</x>
+                  <y>557</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((not (a or b)) and b)</formula>
+                    <graphicalposition>
+                      <x>821</x>
+                      <y>531</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

@@ -1,0 +1,138 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Il existe une ligne avec un pentagone, et sur cette ligne, tous les triangles sont à gauche des carrés.",
+    "formulaText" : "#x.\n(\n    Pentagon(x)\n  &\n    !y.\n    (\n      !z.\n      (\n             SameRow(x,y)\n           &\n             SameRow(x,z)\n           &\n             Square(y)\n           &\n             Triangle(z)\n        =>\n           LeftOf(z,y)\n      )\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "Il existe un carré et un pentagone, de même taille, et ils sont situés sur la même colonne.",
+    "formulaText" : "#x.\n(\n  #y.\n  (\n      Square(x)\n    &\n      Pentagon(y)\n    &\n      SameCol(x,y)\n    &\n      SameSize(x,y)\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "L'absence de pentagone est une condition suffisante pour l'existence d'un petit carré.",
+    "formulaText" : "not #x.(Pentagon(x)) => #x.(Square(x) & Small(x))",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Une condition nécessaire et suffisante, pour que les pentagones soient grands, est que les carrés sont grands.",
+    "formulaText" : "    !x.\n    (\n         Pentagon(x)\n      =>\n         Large(x)\n    )\n<=>\n    !x.\n    (\n         Square(x)\n      =>\n         Large(x)\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Le plus petit objet est un carré.",
+    "formulaText" : "#x.(Square(x) & !y.(x /= y => Smaller(x,y)))",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,348 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Il existe un carré situé entre deux pentagones situés sur la même ligne, et entre deux triangles situés sur la même colonne.",
+    "formulaText" : "#x.\n(\n    Square(x)\n  &\n    #a.\n    (\n      #b.\n      (\n        #c.\n        (\n          #d.\n          (\n              Pentagon(a)\n            &\n              Pentagon(b)\n            &\n              Triangle(c)\n            &\n              Triangle(d)\n            &\n              Between(x,a,b)\n            &\n              Between(x,c,d)\n            &\n              SameRow(a,b)\n            &\n              SameCol(c,d)\n          )\n        )\n      )\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 4,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 5,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "Les triangles sont à gauche des carrés ssi tous les pentagones sont petits.",
+    "formulaText" : "    !x.\n    (\n      !y.\n      (\n             Triangle(x)\n           &\n             Square(y)\n        =>\n           LeftOf(x,y)\n      )\n    )\n<=>\n    !x.\n    (\n         Pentagon(x)\n      =>\n         Small(x)\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "Une condition suffisante pour que les pentagones soient plus petits que les carrés est que les carrés sont grands.",
+    "formulaText" : "   !x.\n   (\n        Square(x)\n     =>\n        Large(x)\n   )\n=>\n   !x.\n   (\n     !y.\n     (\n            Pentagon(x)\n          &\n            Square(y)\n       =>\n          Smaller(x,y)\n     )\n   )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Une seule des deux propositions suivantes est vraie : (i) Soit les carrés sont grands, (ii) soit les pentagones sont petits.",
+    "formulaText" : "    not\n        !x.\n        (\n             Square(x)\n          =>\n             Large(x)\n        )\n<=>\n    !x.\n    (\n         Pentagon(x)\n      =>\n         Small(x)\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 6,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Il existe un objet plus grand que les autres et ce n'est pas un carré.",
+    "formulaText" : "#x.\n(\n    not\n        Square(x)\n  &\n    !y.\n    (\n         x /= y\n      =>\n         Smaller(y,x)\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 5,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  } ]
+}

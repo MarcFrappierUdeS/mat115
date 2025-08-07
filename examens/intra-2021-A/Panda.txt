@@ -1,0 +1,3 @@
+Q1a (((not (a and (not b))) and (not b)) imply (not a))
+Q1b ((not (a imply b)) imply (a and (not b)))
+Q1c ((((a or b) and (b imply c)) and (a imply c)) imply (c or  d))

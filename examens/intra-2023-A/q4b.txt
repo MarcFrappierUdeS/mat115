@@ -1,0 +1,7 @@
+FNC A ∧ B ⇒ C ∨ D
+
+  A ∧ B ⇒ C ∨ D
+<=> < LP-22 >
+  ¬(A ∧ B) ∨ C ∨ D
+<=> < LP-17 >
+  ¬A ∨ ¬B ∨ C ∨ D
