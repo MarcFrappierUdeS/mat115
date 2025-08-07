@@ -1,0 +1,14 @@
+(A∩B)×(C∩D)=(A×C)∩(B×D)
+
+  (A∩B)×(C∩D)
+=       < déf. × >
+  {x,y | x ∈ A∩B ∧ y ∈ C∩D}
+=       < déf. ∩ >
+  {x,y | x ∈ A ∧ x ∈ B ∧ y ∈ C ∧ y ∈ D}
+=       < commutativité ∧ >
+  {x,y | x ∈ A ∧ y ∈ C ∧ x ∈ B ∧ y ∈ D}
+=       < déf. × >
+  {x,y | (x,y) ∈ A×C ∧ (x,y) ∈ B×D}
+=       < déf. ∩ >
+  (A×C)∩(B×D)
+

@@ -1,0 +1,43 @@
+﻿Théorème : !(x).(x:N_3 => 2x+1 < 2^x)
+
+Preuve
+
+Cas de base x=3
+
+  2(3)+1 = 7 < 8 = 2^3
+  
+Cas induction x > 3
+
+(HI) 2(x-1)+1 < 2^(x-1)
+
+  (HI)
+<=>
+  2x-1 < 2^(x-1)
+
+Prouvons 2x+1 < 2^x
+
+  2x+1
+=   { Arithmétique }
+  2x-1+2
+<   { HI }
+  2^(x-1) + 2
+<   { x > 3 => 2^(x-1) > 2 ; voir lemme ci-dessous}
+  2^(x-1) + 2^(x-1)
+=   { Arithmétique }
+  2(2^(x-1))
+=   { Arithmétique }
+  2^x
+
+Lemme x > 3 => 2^(x-1) > 2
+
+  x > 3
+=>    { monotonie de -1 par rapport à > }
+  x-1 > 3-1
+=>    { arithmétique }
+  x-1 > 2
+=>    { monotonie de 2^ pour < }
+  2^(x-1) > 2^2
+=>    { arithmétique }
+  2^(x-1) > 4
+=>    { 4 > 2 }
+  2^(x-1) > 2

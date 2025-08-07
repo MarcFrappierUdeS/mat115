@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((p and q) imply (p and ((not p) or q)))</formula>
+    <graphicalposition>
+      <x>644</x>
+      <y>431</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(p and ((not p) or q))</formula>
+        <graphicalposition>
+          <x>644</x>
+          <y>405</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>p</formula>
+            <graphicalposition>
+              <x>581</x>
+              <y>386</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p and q)</formula>
+                <graphicalposition>
+                  <x>581</x>
+                  <y>360</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>((not p) or q)</formula>
+            <graphicalposition>
+              <x>699</x>
+              <y>379</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>q</formula>
+                <graphicalposition>
+                  <x>699</x>
+                  <y>360</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(p and q)</formula>
+                    <graphicalposition>
+                      <x>699</x>
+                      <y>334</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

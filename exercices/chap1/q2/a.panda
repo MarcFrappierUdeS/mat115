@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(a or (not a))</formula>
+    <graphicalposition>
+      <x>510</x>
+      <y>458</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not (not (a or (not a))))</formula>
+        <graphicalposition>
+          <x>510</x>
+          <y>432</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>510</x>
+              <y>412</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(a or (not a))</formula>
+                <graphicalposition>
+                  <x>442</x>
+                  <y>386</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(not a)</formula>
+                    <graphicalposition>
+                      <x>442</x>
+                      <y>371</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>bottom</formula>
+                        <graphicalposition>
+                          <x>442</x>
+                          <y>351</y>
+                        </graphicalposition>
+                        <children>
+                          <proofnode>
+                            <formula>(a or (not a))</formula>
+                            <graphicalposition>
+                              <x>375</x>
+                              <y>325</y>
+                            </graphicalposition>
+                            <children>
+                              <proofnode>
+                                <formula>a</formula>
+                                <graphicalposition>
+                                  <x>375</x>
+                                  <y>310</y>
+                                </graphicalposition>
+                                <children />
+                              </proofnode>
+                            </children>
+                          </proofnode>
+                          <proofnode>
+                            <formula>(not (a or (not a)))</formula>
+                            <graphicalposition>
+                              <x>503</x>
+                              <y>325</y>
+                            </graphicalposition>
+                            <children />
+                          </proofnode>
+                        </children>
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not (a or (not a)))</formula>
+                <graphicalposition>
+                  <x>638</x>
+                  <y>386</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

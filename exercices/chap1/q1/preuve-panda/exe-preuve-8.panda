@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((not p) and (not q)) imply (not (p or q)))</formula>
+    <graphicalposition>
+      <x>571</x>
+      <y>477</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not (p or q))</formula>
+        <graphicalposition>
+          <x>571</x>
+          <y>451</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>571</x>
+              <y>431</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p or q)</formula>
+                <graphicalposition>
+                  <x>372</x>
+                  <y>405</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+              <proofnode>
+                <formula>bottom</formula>
+                <graphicalposition>
+                  <x>527</x>
+                  <y>411</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>p</formula>
+                    <graphicalposition>
+                      <x>458</x>
+                      <y>392</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                  <proofnode>
+                    <formula>(not p)</formula>
+                    <graphicalposition>
+                      <x>558</x>
+                      <y>392</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((not p) and (not q))</formula>
+                        <graphicalposition>
+                          <x>558</x>
+                          <y>366</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>bottom</formula>
+                <graphicalposition>
+                  <x>726</x>
+                  <y>411</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>q</formula>
+                    <graphicalposition>
+                      <x>657</x>
+                      <y>392</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                  <proofnode>
+                    <formula>(not q)</formula>
+                    <graphicalposition>
+                      <x>757</x>
+                      <y>392</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((not p) and (not q))</formula>
+                        <graphicalposition>
+                          <x>757</x>
+                          <y>366</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+  <proofnode>
+    <formula>((not p) and (not q))</formula>
+    <graphicalposition>
+      <x>570</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+  <proofnode>
+    <formula>((not p) and (not q))</formula>
+    <graphicalposition>
+      <x>570</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+</proofs>
+

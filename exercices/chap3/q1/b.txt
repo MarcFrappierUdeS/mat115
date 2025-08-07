@@ -1,0 +1,43 @@
+Théorème ∀x·x ∈ N_1 => ∑_i=1;^x 5^(i-1) = (5^x - 1)/4
+
+Preuve par induction
+
+Cas de base x=1
+
+Montrons A[x:=1] = ∑_i=1;^1 5^(i-1) = (5^1 - 1)/4
+
+  ∑_i=1;^1 5^(i-1)
+= { def de ∑ }
+  5^(1-1)
+= { arithmétique }
+  1
+= { arithmétique }
+  (5^1 - 1)/4
+
+Cas d'induction x > 1
+
+HI A[x:=x-1]  =  ∑_i=1;^(x-1) 5^(i-1) = (5^(x-1) - 1)/4
+
+  ∑_i=1;^x 5^(i-1)
+=   { def. de ∑ }
+  (∑_i=1;^(x-1) 5^(i-1)) + 5^(x-1)
+=   { HI }
+  ((5^(x-1) - 1)/4) + 5^(x-1)
+
+=   { arithmétique }
+
+  (5^(x-1) - 1) + 4*5^(x-1)
+  -------------------------
+             4
+
+=   { arithmétique }
+
+  5*5^(x-1) - 1
+  -------------
+       4
+
+=   { arithmétique }
+
+  5^x - 1
+  -------
+    4

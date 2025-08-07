@@ -1,0 +1,31 @@
+﻿Théorème : !(x).(x:N => Fx < 2^x)
+
+Preuve
+
+Cas de base x=0 (afin d'instancier HIG pour x-1)
+
+  F0 = 0 < 1 = 2^0
+
+Cas de base x=1 (afin d'instancier HIG pour x-2)
+
+  F1 = 1 < 2 = 2^1
+
+Cas induction x > 0
+
+(HI-1) F(x-1) < 2^(x-1)
+(HI-2) F(x-2) < 2^(x-2)
+
+  Fx
+=
+  F(x-1) + F(x-2)
+<     { HI-1 et HI-2 } 
+  2^(x-1) + 2^(x-2)
+=
+  2(2^(x-2)) + 2^(x-2)
+<
+  2(2^(x-2)) + 2(2^(x-2))
+=
+  (2)(2)(2^(x-2))
+=
+  2^x
+

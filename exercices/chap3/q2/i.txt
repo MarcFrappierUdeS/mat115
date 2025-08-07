@@ -1,0 +1,129 @@
+﻿Théorème
+
+!(f,g).(
+    f : A-->B & g : B --> A & (f;g) = id(A) & (g;f) = id(B) 
+  =>
+    f = g~ & f : A >->> B & g : B >->> A
+    )
+
+Preuve
+
+Supposons
+
+(H1)  f : A --> B
+(H2)  g : B --> A
+(H3)  f;g = id(A)
+(H4)  g;f = id(B)
+
+Montrons
+
+(G0)  f = g~
+(G1)  f : A >->> B 
+(G2)  g : B >->> A
+
+Lemme1 : h : S >->> T <=> h : S >-> T & h~ : T >-> S (une bijection est une double injection )
+Lemme2 : r1 <: r2 => r1;r3 <: r2;r3 & r3;r1 <: r3;r2 ( appelé monotonie de ; pour <: )
+Lemme3 : r : A <-> B => id(A);r = r & r;id(B) = r ( identité élément neutre de ; )
+
+Prouvons (G0)
+
+  (H1)
+=>    { def --> }
+  f~;f <: id(B)
+=>     { Lemme2 }
+  f~;f;g <: id(B);g
+=>     { Lemme3 }
+  f~;f;g <: g
+<=>    { (H3) }
+  f~;id(A) <: g
+<=>    { Lemme3 }
+  f~ <: g
+<=>    {  r1 <: r2 <=> r1~ <: r2~ } 
+(D1)  f <: g~
+  
+  (H2)
+=>    { def --> }
+  g~;g <: id(A)
+=>     { Lemme2 }
+  g~;g;f <: id(A);f
+<=>     { (H4), Lemme3 }
+  g~;id(B) <: f
+<=>    { Lemme3 }
+(D2)  g~ <: f
+
+  (D1) & (D2)
+=>
+  (G0)
+
+Preuve de (G1), en utilisant (G0)
+
+  (G0)
+<=>   { Loi de ~ : a = b~ <=> a~ = b : à prouver }
+  f~ = g
+=>    { Leibniz }
+  f;f~ = f;g
+<=>   { (H3) }
+(D3)  f;f~ = id(A)
+<=>   { (G0) f = g~ et f~ = g}
+(D4)  g~;g = id(A)
+
+  (G0)
+=>    { Leibniz }
+  g;f = g;g~
+<=>   { (H4) }
+(D5)  id(B) = g;g~
+<=>   { (G0) f = g~ et f~ = g}
+(D6)  id(B) = f~;f
+
+  (D3) & (D6) & (H1)
+=>   { Def >-> }
+  f : A >-> B &  f~ : B >-> A
+<=>   { Lemme 1}
+  (G1)
+
+Preuve de (G2)
+  (D4) & (D5) & (H2)
+=>   { Def >-> }
+  g : B >-> A &  g~ : A >-> B
+<=>   { Lemme 1 }
+  (G2)
+
+CQFD
+
+Preuve du Lemme 2
+
+r1 <: r2 => r1;r3 <: r2;r3 & r3;r1 <: r3;r2 ( appelé monotonie de ; pour <: )
+
+Supposons
+
+(H1)  r1 <: r2
+
+Prouvons
+
+(G1)  r1;r3 <: r2;r3
+
+  r1;r3
+=
+  {x|->y | #z. x|->z : r1 & z|->y : r3}
+<:    { (H1), loi 2.40 }
+  {x|->y | #z. x|->z : r2 & z|->y : r3}
+=
+  r2;r3
+  
+CQFD
+
+Preuve du Lemme 3
+
+r : A <-> B  =>  id(A);r = r & r;id(A) = r
+
+  id(A);r
+=
+  { x|->y | #z. x|->z : id(A) & z|->y : r }
+=     { x|->z : id(A) => x = z, LP-49}
+  { x|->y | #z. x|->z : id(A) & x = z & x|->y : r }
+=     { LPO-2}
+  { x|->y | x|->x : id(A) & x|->y : r }
+=     { x|->x : id(A) <=> vrai }
+  { x|->y | x|->y : r }
+=     
+  r

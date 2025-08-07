@@ -1,0 +1,71 @@
+﻿Théorème:
+
+r1 : S +-> S => r1;(r2 /\r3) = r1;r2 /\ r1;r3
+
+Preuve
+
+Supposons
+
+(H1) r1 : S +->  S
+
+et montrons
+
+r1;(r2 /\ r3) = r1;r2 /\ r1;r3
+
+  r1;(r2 /\r3)
+=
+  {(x,y) | #z1.(x,z1):r1 & (z1,y): (r2 /\ r3)}
+=   { def. /\ }
+  {(x,y) | #z1.(x,z1):r1 & (z1,y):r2 & (z1,y):r3}
+=   { LP-5 }
+  {(x,y) | #z1.(x,z1):r1 & (z1,y):r2 & (x,z1):r1 & (z1,y):r3}
+=   {LPO-2 avec z1=z2}
+  {(x,y) | #z1,z2.(x,z1):r1 & (z1,y):r2 & z1=z2 & (x,z2):r1 & (z2,y):r3}
+=   { Lemme 1 (voir ci-dessous) avec H1, LP-49 }
+  {(x,y) | #z1,z2.(x,z1):r1 & (z1,y):r2 & (x,z2):r1 & (z2,y):r3}
+=   { LPO-28 } 
+  {(x,y) | #z1.(x,z1):r1 & (z1,y):r2 & #z2.(x,z2):r1 & (z2,y):r3}
+=   { def. ; }
+  {(x,y) | (x,y):r1;r2 & (x,y):r1;r3}
+=   { def. /\ }
+  r1;r2 /\ r1;r3
+
+********************
+
+Lemme 1: r1 : S +->  S =>   ((x,y):r1 & (x,z):r1 => y=z)
+
+Preuve
+
+Supposons
+
+(H1) r1 : S +->  S
+
+et montrons
+
+(G1) (x,y):r1 & (x,z):r1  =>  y=z
+
+Première déduction
+
+    (H1)
+<=>     { def. +-> }
+(D2)  r1~;r1 <: id(S)
+
+Montrons maintenant (G1). Supposons
+
+(H2)  (x,y):r1 & (x,z):r1
+
+et montrons
+
+(G2) x=y
+
+  (H1)
+<=>
+  (y,x):r1~ &  (x,z):r1
+=>   { LPO-2 avec x=u }
+  #u.(y,u):r1~ & (u,z):r1 & x=u
+=>   { def. ; }
+  (y,z):r1~;r1
+=>   { (D2) }
+  (y,z) : id(S)
+=>   { def. id }
+  y=z
