@@ -2,19 +2,19 @@
 
 ## Tarski UdeS
 
-Tarski permet de vous familiariser avec la logique du ordre
+Tarski permet de vous familiariser avec la logique du premier ordre.
 
 [Téléchargez ici](https://www.usherbrooke.ca/informatique/etudiants-actuels/logiciels-services-outils/logiciel-tarskiudes)
 
 ## Panda
 
-Panda permet de vous familiariser avec la preuve formelle en logique propositionnelle
+Panda permet de vous familiariser avec la preuve formelle en logique propositionnelle.
 
 [Téléchargez ici](https://www.usherbrooke.ca/informatique/etudiants-actuels/logiciels-services-outils/logiciel-panda)
 
 ## ProB
 
-ProB permet de manipuler les structures des mathématiques discrètes
+ProB permet de manipuler les structures des mathématiques discrètes comme les ensembles, les relations et les fonctions.
 
 [Téléchargez ici](https://prob.hhu.de/)
 
