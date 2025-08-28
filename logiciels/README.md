@@ -11,13 +11,13 @@ Dézippez l'archive tarski.zip téléchargée dans un répertoire de votre choix
 ### Windows : pour démarrer TarskiUdeS
 
 0. Double-cliquez sur le fichier tarski.bat. Si cela ne fonctionne pas, passez à l'étape suivante
-1. Démarrer un terminal en tapant **cmd** dans la barre de recherche de Windows
+1. Démarrez un terminal en tapant **cmd** dans la barre de recherche de Windows
 2. Dans ce terminal, changez votre répertoire courant en tapant la commande **cd** *dir*
 3. Exécutez la commande **tarski.bat**
 
 ### Mac OSX : pour démarrer TarskiUdeS
 
-1. Démarrer un terminal en tapant **terminal** dans la barre de recherche (activez la barre de recherche appuyant ⌘-espace)
+1. Démarrez un terminal en tapant **terminal** dans la barre de recherche (activez la barre de recherche appuyant ⌘-espace)
 2. Dans ce terminal, changez votre répertoire courant en tapant la commande **cd** *dir*
 3. Exécutez la commande **chmod a+x tarski.sh** *(Cette commande n'a pas besoin d'être exécutée pour démarrer TarskiUdeS les prochaines fois. Elle sert à autoriser l'exécution du fichier tarski.sh)*
 3. Exécutez la commande **tarski.sh**
@@ -33,7 +33,7 @@ Dézippez l'archive panda.zip téléchargée dans un répertoire de votre choix.
 ### Windows : pour démarrer Panda
 
 0. Double-cliquez sur le fichier panda.jar et cela devrait démarrer Panda. Si cela ne fonctionne pas, exécutez les étapes suivantes.
-1. Démarrer un terminal en tapant **cmd** dans la barre de recherche de Windows
+1. Démarrez un terminal en tapant **cmd** dans la barre de recherche de Windows
 2. Dans ce terminal, changer votre répertoire courant en tapant la commande **cd** *dir*
 3. Exécutez la commande **java -jar panda.jar**
 
