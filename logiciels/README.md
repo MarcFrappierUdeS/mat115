@@ -39,7 +39,7 @@ Dézippez l'archive panda.zip téléchargée dans un répertoire de votre choix.
 
 ### Mac OSX : pour démarrer Panda
 
-1. Double-cliquez sur le fichier panda.jar.  Par mesure de sécurité, Mac OSX va refuser d'exécuter l'application.  Vous devez ensuite autoriser l'exécution de l'application dans le menu Réglages Système -> Confidentialité et sécurité. À la fin de la liste, vous trouvez une demande d'autorisation pour panda.jar.  Acceptez-là.
+1. Double-cliquez sur le fichier panda.jar.  Par mesure de sécurité, Mac OSX va refuser d'exécuter l'application.  Vous devez ensuite autoriser l'exécution de l'application dans le menu *Réglages Système -> Confidentialité et sécurité*. À la fin de la liste, vous trouvez une demande d'autorisation pour panda.jar.  Acceptez-là.
 
 ## ProB
 
