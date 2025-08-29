@@ -1,0 +1,53 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Il existe deux petits triangles et un grand carré.  Le carré est sur la même colonne que les triangles.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "1.\tChaque grand carré est situé entre deux moyens pentagones.\t",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "Il existe une colonne où on retrouve tous les pentagones petits. Il n’y a pas de petit triangle sur cette colonne. S'il n'y a pas de petit pentagone, alors cet énoncé est satisfait.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Il existe exactement un petit carré; de plus, tous les grands pentagones sont situés à sa gauche sur la même ligne que lui.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Tous les grands triangles sont situés entre deux petits pentagones. Ces deux petits pentagones sont sur la même colonne. La formule est satisfaite s'il n'y a pas de grand triangle, mais il faut toujours avoir les deux petits pentagones.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-5",
+    "question" : "Il existe au plus deux grands pentagones, et ils sont sur la même ligne.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-6",
+    "question" : "Une condition nécessaire pour qu’un pentagone soit grand est qu’il existe un petit triangle sur la même ligne que lui.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-7",
+    "question" : "Une condition suffisante pour que tous les pentagones soient grands est qu’il existe un petit triangle.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-8",
+    "question" : "Un pentagone est grand si, et seulement si, tous les objets sur sa ligne sont petits.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-9",
+    "question" : "Traduisez la phrase suivante sans utiliser un ∀. Tous les pentagones sont petits.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  } ]
+}
