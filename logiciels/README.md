@@ -2,7 +2,10 @@
 
 ## Tarski UdeS
 
-Tarski permet de vous familiariser avec la logique du premier ordre. Pour exécuter TarskiUdeS, Java doit être installé sur votre ordinateur; c'est probablement déjà le cas. S'il n'est pas installé, visitez [www.java.com](https://www.java.com)
+Tarski permet de vous familiariser avec la logique du premier ordre. Pour exécuter TarskiUdeS, Java doit être installé sur votre ordinateur; c'est probablement déjà le cas. S'il n'est pas installé, visitez [www.java.com](https://www.java.com). Si ça ne fonctionne pas, vous pouvez essayer les version suivantes de java
+
+- [OpenJDK](https://openjdk.org/)
+- [OpenJDK produit par Microsoft](https://learn.microsoft.com/fr-fr/java/openjdk/download)
 
 [Téléchargez TarskiUdeS ici](https://www.usherbrooke.ca/informatique/etudiants-actuels/logiciels-services-outils/logiciel-tarskiudes)
 
