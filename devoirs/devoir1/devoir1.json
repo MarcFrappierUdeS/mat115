@@ -49,5 +49,32 @@
     "question" : "Traduisez la phrase suivante sans utiliser un ∀. Tous les pentagones sont petits.",
     "formulaText" : "",
     "worlds" : [ ]
-  } ]
+  }, {
+    "formulaName" : "Formula-10",
+    "question" : "Chaque petit pentagone est accompagné d’un grand carré situé sur la même colonne que lui.  Vous ne pouvez pas utiliser  le quantificateur  ∃ pour répondre à cette question.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-11",
+    "question" : "Les carrés sont triés en ordre strictement croissant de taille quand on parcourt le monde gauche à droite.  Deux carrés ne peuvent pas avoir la même taille, sauf s’ils sont situés sur la même colonne.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-12",
+    "question" : "Voici une phrase formée de deux propositions : Soit tous les cubes sont grands, soit tous les triangles sont petits. Cette phrase est satisfaite ssi une seule de ses deux propositions est satisfaite.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-13",
+    "question" : "Il existe un carré qui est plus grands que tous les autres carrés.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-14",
+    "question" : "Sur chaque ligne, le plus grand objet est un pentagone.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }
+
+   ]
 }
