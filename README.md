@@ -11,7 +11,7 @@
 - Lire section 1.4 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
 - Finir [devoir 1](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir1) et exercices sur [Tarski](https://github.com/MarcFrappierUdeS/mat115/tree/main/exercices/chap1/Tarski)
 - Débuter les [exercices sur la preuve en déduction naturelle (Questions 1 et 2 du chaitre 1 des notes de cours)](https://marcfrappierudes.github.io/mat115/logique.pdf)
-
+  
 # Semaine du 1er septembre
 
 - Lire sections 1.2 et 1.3 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
