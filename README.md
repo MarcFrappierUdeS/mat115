@@ -1,5 +1,11 @@
 # MAT115 - Logique et mathématiques discrètes
 
+# Semaine du 15 septembre
+
+- Lire section 1.4.4, 1.4.5, 1.5 et 1.6 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
+- Commencer le [devoir 2](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir2) et exercices sur [Panda](https://github.com/MarcFrappierUdeS/mat115/tree/main/exercices/chap1)
+- Finir les [exercices du chapitre 1](https://marcfrappierudes.github.io/mat115/logique.pdf)
+
 # Semaine du 8 septembre
 
 - Lire section 1.4 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
