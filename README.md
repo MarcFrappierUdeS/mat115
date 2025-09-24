@@ -1,5 +1,14 @@
 # MAT115 - Logique et mathématiques discrètes
 
+# Semaine du 22 septembre
+
+- Lire sections 2.1 à 2.3 et 2.4 (produit Cartésien) des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
+- Laboratoire du vendredi
+    - Présentation du logiciel ProB pour manipuler des structures discrètes
+    - Finir le [devoir 2](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir2)
+    - Débuter les [exercices du chapitre 2](https://marcfrappierudes.github.io/mat115/logique.pdf)
+        - Q1(a), (b) i à xi, (c) i, Q2 (a) à (e)
+
 # Semaine du 15 septembre
 
 - Lire section 1.4.4, 1.4.5, 1.5 et 1.6 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
