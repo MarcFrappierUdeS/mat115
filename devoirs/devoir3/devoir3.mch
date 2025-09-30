@@ -15,7 +15,7 @@ CONSTANTS
 
 /* décommentez une constante à la fois */
 
-// , q1 /* contient l'ensemble des images de a1 - ensemble défini par compréhension */
+// , q1 /* contient l'ensemble des images de a1 dans r1 - ensemble défini par compréhension */
 // , q1_alt /* q1, mais défini avec des opérateurs */
 // , q2 /* (x,y) tels que x /= y et x et y ont une image en commun dans r1 - ensemble défini par compréhension */
 // , q2_alt /* q2, mais défini avec des opérateurs */
