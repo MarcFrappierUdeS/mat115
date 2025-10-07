@@ -1,15 +1,19 @@
 MACHINE Tarski
 
+/* Représentation d'un monde de Tarski avec des objets représentés par des couples (x,y) qui représentent les coordonnés des objets dans le plan. */
+
 CONSTANTS Plan, Objet, Square, Triangle, Pentagon, Small, Medium, Large, formule0, formule1, formule2, formule3
+
 PROPERTIES
   Plan = (1..8) * (1..8)
 & Square = { (1,1), (2,2) }
 & Triangle = { (3,2) }
+& Pentagon <: Plan & Pentagon = {}
+& Square /\ Triangle = {} & Pentagon /\ Triangle = {} & Square /\ Pentagon = {}
 & Objet = (Square \/ Triangle \/ Pentagon)
 & Small = { (1,1) }
 & Medium = { (2,2) }
 & Large = { (3,2) }
-& Pentagon <: Plan & Pentagon = {}
 // formule0 : Tous les objets sont sur la même ligne
 & formule0 = bool(
    !(x1,y1,x2,y2).

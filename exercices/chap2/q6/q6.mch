@@ -1,10 +1,15 @@
 MACHINE Tarski
+
+/* Cette machine permet de représenter un monde de Tarski avec les mathématiques discrètes et d'évaluer une formule sur ce monde */
+
 SETS
-    Objects = {s1,s2,t1}
+    Objects = {s1,s2,t1} // 2 carrés et un triangle
 ;   ObjectSizes = {small, medium, large}
 ;   ObjectTypes = {triangle, square, pentagon}
  
 DEFINITIONS
+
+/* Définitions des predicats du language Tarski */
 
 // Dans une définition, toujours mettres des parenthèses autour de la définition, c'est-à -dire écrire 
 // def1(x1,...,xn) = ( ... )
@@ -34,7 +39,7 @@ PROPERTIES
 // objet s1
 ∧ x_pos(s1) = 1 ∧ y_pos(s1) = 1 ∧ type(s1) = square ∧ oSize(s1) = small
 // objet s2
-∧ x_pos(s2) = 2 ∧ y_pos(s2) = 2 ∧ type(s2) = square ∧ oSize(s2) = medium
+∧ x_pos(s2) = 2 ∧ y_pos(s2) = 1 ∧ type(s2) = square ∧ oSize(s2) = medium
 // objet t1
 ∧ x_pos(t1) = 3 ∧ y_pos(t1) = 2 ∧ type(t1) = triangle ∧ oSize(t1) = large
 // formule0 : tous les carrés sont sur la même ligne

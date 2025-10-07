@@ -1,5 +1,15 @@
 # MAT115 - Logique et mathématiques discrètes
 
+# Semaine du 6 octobre
+
+- Lire section 2.5 des [notes de cours sur les fonctions](https://marcfrappierudes.github.io/mat115/logique.pdf)
+- Voir les [exemples des classes de fonction](https://github.com/MarcFrappierUdeS/mat115/blob/main/ref/resume-ens-rel-fonction-abrial.pdf)
+- Laboratoire du vendredi
+    - Finir le [devoir 3](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir3)
+    - Faire les exercices du chapitre 2, sauf q3
+        - [Notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
+        - [Site web](https://github.com/MarcFrappierUdeS/mat115/tree/main/exercices/chap2)
+
 # Semaine du 29 septembre
 
 - Lire section 2.4 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
