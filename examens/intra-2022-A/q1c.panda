@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((a and b) or ((not a) and c)) imply ((not a) imply c))</formula>
+    <graphicalposition>
+      <x>644</x>
+      <y>658</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>((not a) imply c)</formula>
+        <graphicalposition>
+          <x>644</x>
+          <y>632</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>c</formula>
+            <graphicalposition>
+              <x>644</x>
+              <y>617</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>((a and b) or ((not a) and c))</formula>
+                <graphicalposition>
+                  <x>492</x>
+                  <y>591</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>694</x>
+                  <y>602</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>bottom</formula>
+                    <graphicalposition>
+                      <x>694</x>
+                      <y>582</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>a</formula>
+                        <graphicalposition>
+                          <x>658</x>
+                          <y>567</y>
+                        </graphicalposition>
+                        <children>
+                          <proofnode>
+                            <formula>(a and b)</formula>
+                            <graphicalposition>
+                              <x>658</x>
+                              <y>541</y>
+                            </graphicalposition>
+                            <children />
+                          </proofnode>
+                        </children>
+                      </proofnode>
+                      <proofnode>
+                        <formula>(not a)</formula>
+                        <graphicalposition>
+                          <x>749</x>
+                          <y>567</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>846</x>
+                  <y>602</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((not a) and c)</formula>
+                    <graphicalposition>
+                      <x>846</x>
+                      <y>576</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+
