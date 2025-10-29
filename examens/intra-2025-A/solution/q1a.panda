@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((a imply (not b)) and b) imply (not a))</formula>
+    <graphicalposition>
+      <x>575</x>
+      <y>492</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not a)</formula>
+        <graphicalposition>
+          <x>575</x>
+          <y>477</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>575</x>
+              <y>457</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>b</formula>
+                <graphicalposition>
+                  <x>453</x>
+                  <y>437</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((a imply (not b)) and b)</formula>
+                    <graphicalposition>
+                      <x>453</x>
+                      <y>411</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not b)</formula>
+                <graphicalposition>
+                  <x>666</x>
+                  <y>437</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(a imply (not b))</formula>
+                    <graphicalposition>
+                      <x>636</x>
+                      <y>411</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((a imply (not b)) and b)</formula>
+                        <graphicalposition>
+                          <x>636</x>
+                          <y>385</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>a</formula>
+                    <graphicalposition>
+                      <x>758</x>
+                      <y>422</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+
