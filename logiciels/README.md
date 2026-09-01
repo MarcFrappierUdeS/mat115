@@ -7,7 +7,7 @@ Tarski permet de vous familiariser avec la logique du premier ordre. Pour exécu
 - [OpenJDK](https://openjdk.org/)
 - [OpenJDK produit par Microsoft](https://learn.microsoft.com/fr-fr/java/openjdk/download)
 
-[Téléchargez TarskiUdeS ici](https://www.usherbrooke.ca/informatique/etudiants-actuels/logiciels-services-outils/logiciel-tarskiudes)
+[Téléchargez TarskiUdeS ici](https://www.usherbrooke.ca/intranet-sciences/informatique/logiciels-services-et-outils). Attention : le site demande de se connecter à l'intranet de l'UdeS.
 
 Dézippez l'archive tarski.zip téléchargée dans un répertoire de votre choix. Soit *dir* le nom de ce répertoire.
 
