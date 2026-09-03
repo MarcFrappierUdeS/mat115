@@ -50,5 +50,5 @@
 
 # Semaine du 31 août
 
-- Lire sections 1.1 et 1.2 des [notes de cours](https://marcfrappierudes.github.io/mat115/logique.pdf)
+- Lire sections 1.1 et 1.2 des [notes de cours](https://github.com/MarcFrappierUdeS/mat115/blob/main/logique.pdf)
 - Faire [devoir 1](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir1) et exercices sur [Tarski](https://github.com/MarcFrappierUdeS/mat115/tree/main/exercices/chap1/Tarski)
