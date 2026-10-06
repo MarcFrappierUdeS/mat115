@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((b and (a or (b imply c))) imply (a or c))</formula>
+    <graphicalposition>
+      <x>781</x>
+      <y>560</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(a or c)</formula>
+        <graphicalposition>
+          <x>781</x>
+          <y>534</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(a or (b imply c))</formula>
+            <graphicalposition>
+              <x>559</x>
+              <y>508</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(b and (a or (b imply c)))</formula>
+                <graphicalposition>
+                  <x>559</x>
+                  <y>482</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>722</x>
+              <y>508</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>a</formula>
+                <graphicalposition>
+                  <x>722</x>
+                  <y>493</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>944</x>
+              <y>508</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>944</x>
+                  <y>493</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(b imply c)</formula>
+                    <graphicalposition>
+                      <x>835</x>
+                      <y>467</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                  <proofnode>
+                    <formula>b</formula>
+                    <graphicalposition>
+                      <x>1003</x>
+                      <y>473</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>(b and (a or (b imply c)))</formula>
+                        <graphicalposition>
+                          <x>1003</x>
+                          <y>447</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

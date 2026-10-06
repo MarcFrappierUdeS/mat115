@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((p or q) and (p or r)) imply (p or (q and r)))</formula>
+    <graphicalposition>
+      <x>468</x>
+      <y>370</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(p or (q and r))</formula>
+        <graphicalposition>
+          <x>468</x>
+          <y>344</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(p or q)</formula>
+            <graphicalposition>
+              <x>126</x>
+              <y>318</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>((p or q) and (p or r))</formula>
+                <graphicalposition>
+                  <x>126</x>
+                  <y>292</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(p or (q and r))</formula>
+            <graphicalposition>
+              <x>310</x>
+              <y>318</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>p</formula>
+                <graphicalposition>
+                  <x>310</x>
+                  <y>299</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(p or (q and r))</formula>
+            <graphicalposition>
+              <x>651</x>
+              <y>318</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p or r)</formula>
+                <graphicalposition>
+                  <x>493</x>
+                  <y>292</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((p or q) and (p or r))</formula>
+                    <graphicalposition>
+                      <x>493</x>
+                      <y>266</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(p or (q and r))</formula>
+                <graphicalposition>
+                  <x>677</x>
+                  <y>292</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>p</formula>
+                    <graphicalposition>
+                      <x>677</x>
+                      <y>273</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(p or (q and r))</formula>
+                <graphicalposition>
+                  <x>835</x>
+                  <y>292</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(q and r)</formula>
+                    <graphicalposition>
+                      <x>835</x>
+                      <y>266</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>q</formula>
+                        <graphicalposition>
+                          <x>806</x>
+                          <y>247</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                      <proofnode>
+                        <formula>r</formula>
+                        <graphicalposition>
+                          <x>866</x>
+                          <y>251</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

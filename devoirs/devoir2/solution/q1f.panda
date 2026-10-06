@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((not ((not a) imply b)) imply (not (a or b)))</formula>
+    <graphicalposition>
+      <x>694</x>
+      <y>691</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not (a or b))</formula>
+        <graphicalposition>
+          <x>694</x>
+          <y>665</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>694</x>
+              <y>645</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>((not a) imply b)</formula>
+                <graphicalposition>
+                  <x>621</x>
+                  <y>619</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(a or b)</formula>
+                    <graphicalposition>
+                      <x>489</x>
+                      <y>593</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                  <proofnode>
+                    <formula>((not a) imply b)</formula>
+                    <graphicalposition>
+                      <x>610</x>
+                      <y>593</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>b</formula>
+                        <graphicalposition>
+                          <x>610</x>
+                          <y>573</y>
+                        </graphicalposition>
+                        <children>
+                          <proofnode>
+                            <formula>bottom</formula>
+                            <graphicalposition>
+                              <x>610</x>
+                              <y>553</y>
+                            </graphicalposition>
+                            <children>
+                              <proofnode>
+                                <formula>a</formula>
+                                <graphicalposition>
+                                  <x>574</x>
+                                  <y>538</y>
+                                </graphicalposition>
+                                <children />
+                              </proofnode>
+                              <proofnode>
+                                <formula>(not a)</formula>
+                                <graphicalposition>
+                                  <x>640</x>
+                                  <y>538</y>
+                                </graphicalposition>
+                                <children />
+                              </proofnode>
+                            </children>
+                          </proofnode>
+                        </children>
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>((not a) imply b)</formula>
+                    <graphicalposition>
+                      <x>743</x>
+                      <y>593</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>b</formula>
+                        <graphicalposition>
+                          <x>743</x>
+                          <y>573</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not ((not a) imply b))</formula>
+                <graphicalposition>
+                  <x>882</x>
+                  <y>619</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

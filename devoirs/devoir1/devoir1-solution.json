@@ -1,0 +1,1502 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Il existe deux petits triangles et un grand carré.  Le carré est sur la même colonne que les triangles.",
+    "formulaText" : "#x.\n(\n  #y.\n  (\n    #z.\n    (\n        Triangle(x)\n      &\n        Triangle(y)\n      &\n        Square(z)\n      &\n        x /= y\n      &\n        Small(x)\n      &\n        Small(y)\n      &\n        Large(z)\n      &\n        SameCol(x,z)\n      &\n        SameCol(y,z)\n    )\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "a",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "1.\tChaque grand carré est situé entre deux moyens pentagones.\t",
+    "formulaText" : "!x.\n(\n       Square(x)\n     &\n       Large(x)\n  =>\n     #y.\n     (\n       #z.\n       (\n           Pentagon(y)\n         &\n           Medium(y)\n         &\n           Pentagon(z)\n         &\n           Medium(z)\n         &\n           Between(x,y,z)\n       )\n     )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "Il existe une colonne où on retrouve tous les pentagones petits. Il n’y a pas de petit triangle sur cette colonne. S'il n'y a pas de petit pentagone, alors cet énoncé est satisfait.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n         Pentagon(x)\n       &\n         Small(x)\n       &\n         Pentagon(y)\n       &\n         Small(y)\n    =>\n         SameCol(x,y)\n       &\n         not\n             #z.\n             (\n                 Triangle(z)\n               &\n                 Small(z)\n               &\n                 SameCol(x,z)\n             )\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-4",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Il existe exactement un petit carré; de plus, tous les grands pentagones sont situés à sa gauche sur la même ligne que lui.",
+    "formulaText" : "#x.\n(\n    Square(x)\n  &\n    Small(x)\n  &\n    not\n        #y.\n        (\n            x /= y\n          &\n            Square(y)\n          &\n            Small(y)\n        )\n  &\n    !z.\n    (\n           Pentagon(z)\n         &\n           Large(z)\n      =>\n           SameRow(x,z)\n         &\n           LeftOf(z,x)\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 5,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-4",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Tous les grands triangles sont situés entre deux petits pentagones. Ces deux petits pentagones sont sur la même colonne. La formule est satisfaite s'il n'y a pas de grand triangle, mais il faut toujours avoir les deux petits pentagones.",
+    "formulaText" : "#x.\n(\n    Pentagon(x)\n  &\n    Small(x)\n  &\n    #y.\n    (\n        Pentagon(y)\n      &\n        Small(y)\n      &\n        SameCol(x,y)\n      &\n        !z.\n        (\n               Triangle(z)\n             &\n               Large(z)\n          =>\n             Between(z,x,y)\n        )\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 4,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 5,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-4",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 6,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-5",
+    "question" : "Il existe au plus deux grands pentagones, et ils sont sur la même ligne.",
+    "formulaText" : "  !x.\n  (\n    !y.\n    (\n           Pentagon(x)\n         &\n           Large(x)\n         &\n           Pentagon(y)\n         &\n           Large(y)\n      =>\n         SameRow(x,y)\n    )\n  )\n&\n  not\n      #x.\n      (\n          Pentagon(x)\n        &\n          Large(x)\n        &\n          #y.\n          (\n              Pentagon(y)\n            &\n              Large(y)\n            &\n              #z.\n              (\n                  Pentagon(z)\n                &\n                  Large(z)\n                &\n                  x /= y\n                &\n                  x /= z\n                &\n                  y /= z\n              )\n          )\n      )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-6",
+    "question" : "Une condition nécessaire pour qu’un pentagone soit grand est qu’il existe un petit triangle sur la même ligne que lui.",
+    "formulaText" : "!x.\n(\n       Pentagon(x)\n     &\n       Large(x)\n  =>\n     #y.\n     (\n         Triangle(y)\n       &\n         Small(y)\n       &\n         SameRow(x,y)\n     )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-7",
+    "question" : "Une condition suffisante pour que tous les pentagones soient grands est qu’il existe un petit triangle.",
+    "formulaText" : "   #y.\n   (\n       Triangle(y)\n     &\n       Small(y)\n   )\n=>\n   !x.\n   (\n       Pentagon(x)\n     =>\n       Large(x)\n   )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 5,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-8",
+    "question" : "Un pentagone est grand si, et seulement si, tous les objets sur sa ligne sont petits.",
+    "formulaText" : "!x.\n(\n     Pentagon(x)\n  =>\n     (\n           Large(x)\n       <=>\n           !y.\n           (\n                  x /= y\n                &\n                  SameRow(x,y)\n             =>\n                Small(y)\n           )\n     )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-9",
+    "question" : "Traduisez la phrase suivante sans utiliser un ∀. Tous les pentagones sont petits.",
+    "formulaText" : "not\n    #x.\n    (\n      not\n          (\n               Pentagon(x)\n            =>\n               Small(x)\n          )\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-10",
+    "question" : "Chaque petit pentagone est accompagné d’un grand carré situé sur la même colonne que lui.  Vous ne pouvez pas utiliser  le quantificateur  ∃ pour répondre à cette question.",
+    "formulaText" : "!x.\n(\n       Pentagon(x)\n     &\n       Small(x)\n  =>\n     not\n         !y.\n         (\n           not\n               (\n                   Square(y)\n                 &\n                   Large(y)\n                 &\n                   SameCol(x,y)\n               )\n         )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-11",
+    "question" : "Les carrés sont triés en ordre strictement croissant de taille quand on parcourt le monde gauche à droite.  Deux carrés ne peuvent pas avoir la même taille, sauf s’ils sont situés sur la même colonne.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n         Square(x)\n       &\n         Square(y)\n       &\n         LeftOf(x,y)\n    =>\n       Smaller(x,y)\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-12",
+    "question" : "Voici une phrase formée de deux propositions : Soit tous les cubes sont grands, soit tous les triangles sont petits. Cette phrase est satisfaite ssi une seule de ses deux propositions est satisfaite.",
+    "formulaText" : "not\n    (\n          !x.\n          (\n               Square(x)\n            =>\n               Large(x)\n          )\n      <=>\n          !x.\n          (\n               Triangle(x)\n            =>\n               Small(x)\n          )\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 4,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-4",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-13",
+    "question" : "Il existe un carré qui est plus grands que tous les autres carrés.",
+    "formulaText" : "#x.\n(\n    Square(x)\n  &\n    !y.\n    (\n           Square(y)\n         &\n           x /= y\n      =>\n         Smaller(y,x)\n    )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 5,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 5,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-14",
+    "question" : "Sur chaque ligne, le plus grand objet est un pentagone.",
+    "formulaText" : "!x.\n(\n  #y.\n  (\n      Pentagon(y)\n    &\n      SameRow(x,y)\n    &\n      !z.\n      (\n             SameRow(y,z)\n           &\n             y /= z\n        =>\n           Smaller(z,y)\n      )\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 3,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  } ]
+}

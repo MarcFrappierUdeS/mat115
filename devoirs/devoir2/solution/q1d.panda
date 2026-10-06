@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((a or b) and (b imply c)) imply (a or c))</formula>
+    <graphicalposition>
+      <x>711</x>
+      <y>616</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(a or c)</formula>
+        <graphicalposition>
+          <x>711</x>
+          <y>590</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(a or b)</formula>
+            <graphicalposition>
+              <x>518</x>
+              <y>564</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>((a or b) and (b imply c))</formula>
+                <graphicalposition>
+                  <x>518</x>
+                  <y>538</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>681</x>
+              <y>564</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>a</formula>
+                <graphicalposition>
+                  <x>681</x>
+                  <y>549</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or c)</formula>
+            <graphicalposition>
+              <x>874</x>
+              <y>564</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>874</x>
+                  <y>549</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(b imply c)</formula>
+                    <graphicalposition>
+                      <x>844</x>
+                      <y>523</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((a or b) and (b imply c))</formula>
+                        <graphicalposition>
+                          <x>844</x>
+                          <y>497</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>b</formula>
+                    <graphicalposition>
+                      <x>983</x>
+                      <y>529</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

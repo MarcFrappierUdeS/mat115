@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((p imply (q imply r)) imply (q imply (p imply r)))</formula>
+    <graphicalposition>
+      <x>487</x>
+      <y>513</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(q imply (p imply r))</formula>
+        <graphicalposition>
+          <x>487</x>
+          <y>487</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(p imply r)</formula>
+            <graphicalposition>
+              <x>487</x>
+              <y>461</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>r</formula>
+                <graphicalposition>
+                  <x>487</x>
+                  <y>446</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(q imply r)</formula>
+                    <graphicalposition>
+                      <x>456</x>
+                      <y>420</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>(p imply (q imply r))</formula>
+                        <graphicalposition>
+                          <x>426</x>
+                          <y>394</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                      <proofnode>
+                        <formula>p</formula>
+                        <graphicalposition>
+                          <x>544</x>
+                          <y>401</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>q</formula>
+                    <graphicalposition>
+                      <x>605</x>
+                      <y>427</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+  <proofnode>
+    <formula>q</formula>
+    <graphicalposition>
+      <x>536</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+</proofs>
+

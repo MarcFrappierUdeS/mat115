@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((p or ((not p) and q)) imply (p or q))</formula>
+    <graphicalposition>
+      <x>526</x>
+      <y>467</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(p or q)</formula>
+        <graphicalposition>
+          <x>526</x>
+          <y>441</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(p or ((not p) and q))</formula>
+            <graphicalposition>
+              <x>408</x>
+              <y>415</y>
+            </graphicalposition>
+            <children />
+          </proofnode>
+          <proofnode>
+            <formula>(p or q)</formula>
+            <graphicalposition>
+              <x>551</x>
+              <y>415</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>p</formula>
+                <graphicalposition>
+                  <x>551</x>
+                  <y>396</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(p or q)</formula>
+            <graphicalposition>
+              <x>669</x>
+              <y>415</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>q</formula>
+                <graphicalposition>
+                  <x>669</x>
+                  <y>396</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((not p) and q)</formula>
+                    <graphicalposition>
+                      <x>669</x>
+                      <y>370</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

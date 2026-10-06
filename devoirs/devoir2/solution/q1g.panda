@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((p imply q) and (not q)) imply (not p))</formula>
+    <graphicalposition>
+      <x>768</x>
+      <y>607</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not p)</formula>
+        <graphicalposition>
+          <x>768</x>
+          <y>588</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>768</x>
+              <y>568</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>q</formula>
+                <graphicalposition>
+                  <x>677</x>
+                  <y>549</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(p imply q)</formula>
+                    <graphicalposition>
+                      <x>646</x>
+                      <y>523</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((p imply q) and (not q))</formula>
+                        <graphicalposition>
+                          <x>646</x>
+                          <y>497</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>p</formula>
+                    <graphicalposition>
+                      <x>768</x>
+                      <y>530</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not q)</formula>
+                <graphicalposition>
+                  <x>890</x>
+                  <y>549</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((p imply q) and (not q))</formula>
+                    <graphicalposition>
+                      <x>890</x>
+                      <y>523</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(p imply (not (not p)))</formula>
+    <graphicalposition>
+      <x>603</x>
+      <y>420</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not (not p))</formula>
+        <graphicalposition>
+          <x>603</x>
+          <y>401</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>603</x>
+              <y>381</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>p</formula>
+                <graphicalposition>
+                  <x>565</x>
+                  <y>362</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+              <proofnode>
+                <formula>(not p)</formula>
+                <graphicalposition>
+                  <x>633</x>
+                  <y>362</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+  <proofnode>
+    <formula>p</formula>
+    <graphicalposition>
+      <x>509</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+  <proofnode>
+    <formula>p</formula>
+    <graphicalposition>
+      <x>509</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+  <proofnode>
+    <formula>p</formula>
+    <graphicalposition>
+      <x>509</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+  <proofnode>
+    <formula>(not p)</formula>
+    <graphicalposition>
+      <x>544</x>
+      <y>0</y>
+    </graphicalposition>
+    <children />
+  </proofnode>
+</proofs>
+

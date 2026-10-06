@@ -1,0 +1,13 @@
+﻿  (T*S)/\r
+=      { def de /\ }
+  {(x,y) | (x,y):T*S & (x,y):r}
+=      { def de * }
+  {(x,y) | x:T & y:S & (x,y):r}
+=      { LPO-2 }
+  {(x,y) | #z. x:T & x=z & y:S & (z,y):r}
+=     {(z,y):r & hyp. r : S<->S => y:S, LP-49 } 
+  {(x,y) | #z. x:T & x=z & (z,y):r}
+=      { de. id } 
+  {(x,y) | #z. (x,z):id(T) & (z,y):r}
+=      { def. ; } 
+  id(T);r

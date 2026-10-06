@@ -1,0 +1,39 @@
+    not(A => B) & A & (A or (B & C))
+<=>   // < LP-22 >
+    not( not (A) or B) & A & (A or (B & C))
+<=>   // < LP-18 >
+    (not( not (A)) & not(B)) & A & (A or (B & C))
+<=>   // < LP-21 >
+     A & not(B) & A & (A or (B & C))
+<=>   // < LP-11 >
+     (A & not(B) & A & A) or (A & not(B) & A & B & C)
+<=>   // < LP-19 >
+     (A & not(B) & A & A) or (A & FAUX & A & C)
+<=>   // < LP-1 >
+     (A & not(B) & A & A) or (A & FAUX & A & C)
+<=>   // < LP-1 >
+     (A & not(B) & A & A) or FAUX
+<=>   // < LP-4 >
+     (A & not(B) & A & A)
+<=>   // < LP-5 >
+     (A & not(B))
+
+    ¬(A ⇒ B) ∧ A ∧ (A ∨ (B ∧ C))
+⇔   // < LP-22 >
+    ¬( ¬ (A) ∨ B) ∧ A ∧ (A ∨ (B ∧ C))
+⇔   // < LP-18 >
+    (not( ¬ (A)) ∧ ¬(B)) ∧ A ∧ (A ∨ (B ∧ C))
+⇔   // < LP-21 >
+     A ∧ ¬(B) ∧ A ∧ (A ∨ (B ∧ C))
+⇔   // < LP-11 >
+     (A ∧ ¬(B) ∧ A ∧ A) ∨ (A ∧ ¬(B) ∧ A ∧ B ∧ C)
+⇔   // < LP-19 >
+     (A ∧ ¬(B) ∧ A ∧ A) ∨ (A ∧ FAUX ∧ A ∧ C)
+⇔   // < LP-1 >
+     (A ∧ ¬(B) ∧ A ∧ A) ∨ (A ∧ FAUX ∧ A ∧ C)
+⇔   // < LP-1 >
+     (A ∧ ¬(B) ∧ A ∧ A) ∨ FAUX
+⇔   // < LP-4 >
+     (A ∧ ¬(B) ∧ A ∧ A)
+⇔   // < LP-5 >
+     (A ∧ ¬(B))

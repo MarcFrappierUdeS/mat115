@@ -1,0 +1,14 @@
+Soit r : S <-> S, montrez que r;id(S) = r
+
+  r;id(S)
+=         < def de ; >
+  {(x,y) | #z. (x,z) : r & (z,y) : id(S) }
+=         < def de id(S) >
+  {(x,y) | #z. (x,z) : r & z=y & z : S }
+=         < LPO-2 >
+  {(x,y) | (x,y) : r & y : S }
+=         < LP-56 avec (x,y) : r => y : S >
+  {(x,y) | (x,y) : r }
+=
+  r
+

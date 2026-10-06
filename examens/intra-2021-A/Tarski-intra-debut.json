@@ -1,0 +1,23 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Tous les pentagones sont situés sur la même ligne, et cette ligne doit contenir au moins un carré et au moins un pentagone.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "Chaque ligne ne contient que des objets de la même taille.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "Pour chaque objet, on retrouve sur sa ligne une paire de carré",
+    "formulaText" : "",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Une condition suffisante pour qu'il existe un pentagone petit est que les carrés soient plus grands que tous les triangles.",
+    "formulaText" : "",
+    "worlds" : [ ]
+  } ]
+}

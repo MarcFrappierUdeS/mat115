@@ -1,0 +1,30 @@
+﻿Théorème : !(x).(x:N_1 => phi^(x-2) <= Fx)
+
+Preuve
+
+Cas de base x=1 (afin d'instancier HIG pour x-1)
+
+  phi^(1-2) = 1/phi < 1 = F1
+
+Cas de base x=2 (afin d'instancier HIG pour x-2)
+
+  phi^(2-2) = 1 = F2
+
+Cas induction x > 2
+
+(HI-1) phi^(x-3) <= F(x-1)
+(HI-2) phi^(x-4) <= F(x-2)
+
+  Fx
+=
+  F(x-1) + F(x-2)
+>=    { HI-1 et HI-2 } 
+  phi^(x-3) + phi^(x-4)
+=     { Arithmétique }
+  phi(phi^(x-4)) + phi^(x-4)
+=     { Arithmétique }
+  (phi+1)phi^(x-4)
+=   {loi 2.18 : phi+1 = phi^2}
+  phi^2phi^(x-4)
+=   {Arithmétique}
+  phi^(x-2)

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((a imply b) and (not b)) imply (not a))</formula>
+    <graphicalposition>
+      <x>800</x>
+      <y>606</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(not a)</formula>
+        <graphicalposition>
+          <x>800</x>
+          <y>591</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>bottom</formula>
+            <graphicalposition>
+              <x>800</x>
+              <y>571</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>b</formula>
+                <graphicalposition>
+                  <x>708</x>
+                  <y>551</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(a imply b)</formula>
+                    <graphicalposition>
+                      <x>678</x>
+                      <y>525</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((a imply b) and (not b))</formula>
+                        <graphicalposition>
+                          <x>678</x>
+                          <y>499</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>a</formula>
+                    <graphicalposition>
+                      <x>800</x>
+                      <y>536</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+              <proofnode>
+                <formula>(not b)</formula>
+                <graphicalposition>
+                  <x>921</x>
+                  <y>551</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>((a imply b) and (not b))</formula>
+                    <graphicalposition>
+                      <x>921</x>
+                      <y>525</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

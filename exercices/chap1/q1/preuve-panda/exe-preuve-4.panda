@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((not (not p)) imply p)</formula>
+    <graphicalposition>
+      <x>601</x>
+      <y>392</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>p</formula>
+        <graphicalposition>
+          <x>601</x>
+          <y>373</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(not (not p))</formula>
+            <graphicalposition>
+              <x>601</x>
+              <y>354</y>
+            </graphicalposition>
+            <children />
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

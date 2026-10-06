@@ -1,0 +1,11 @@
+id(T) ; r = T <| r
+
+	id(T);r
+=  < def ; >
+	{(x,y) | #z . (x,z) : id(T) & (z,y) : r }
+=  < def id >
+	{(x,y) | #z . x=z & x : T & (z,y) : r }
+=    <LPO-2>
+	{(x,y) | x : T & (x,y) : r }
+=  < def <| >
+	T <| r

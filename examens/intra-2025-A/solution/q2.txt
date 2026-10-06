@@ -1,0 +1,103 @@
+1- Si l'objet a est un carré, alors il est le plus grand carré de sa colonne.
+
+   Square(a)
+=>
+   !x.
+   (
+          SameCol(x,a)
+        &
+          x /= a
+     =>
+        Smaller(x,a)
+   )
+
+2- Les carrés sont plus grands que les pentagones ssi  il existe une colonne qui ne contient que des triangles, avec au moins un triangle.
+
+    !x.
+    (
+      !y.
+      (
+             Square(x)
+           &
+             Pentagon(y)
+        =>
+           Smaller(y,x)
+      )
+    )
+<=>
+    #x.
+    (
+        Triangle(x)
+      &
+        !y.
+        (
+             SameCol(x,y)
+          =>
+             Triangle(y)
+        )
+    )
+
+3- Une condition nécessaire pour que les carrés soient tous grands, est que les pentagones soient tous petits.
+
+   !x.
+   (
+        Square(x)
+     =>
+        Large(x)
+   )
+=>
+   !x.
+   (
+        Pentagon(x)
+     =>
+        Small(x)
+   )
+
+4- Il y a un carré et un pentagone de même taille qui sont situés à gauche tous les autres objets.
+
+#x.
+(
+  #y.
+  (
+      Square(x)
+    &
+      Pentagon(y)
+    &
+      SameSize(x,y)
+    &
+      !z.
+      (
+             z /= x
+           &
+             z /= y
+        =>
+             LeftOf(x,z)
+           &
+             LeftOf(y,z)
+      )
+  )
+)
+
+5- Soit tous les carrés sont sur la même ligne, soit tous les pentagones sont petits.
+
+not
+    (
+          !x.
+          (
+            !y.
+            (
+                   Square(x)
+                 &
+                   Square(y)
+              =>
+                 SameRow(x,y)
+            )
+          )
+      <=>
+          !x.
+          (
+               Pentagon(x)
+            =>
+               Small(x)
+          )
+    )

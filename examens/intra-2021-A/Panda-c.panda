@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((((a or b) and (b imply c)) and (a imply c)) imply (c or d))</formula>
+    <graphicalposition>
+      <x>811</x>
+      <y>615</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(c or d)</formula>
+        <graphicalposition>
+          <x>811</x>
+          <y>589</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(a or b)</formula>
+            <graphicalposition>
+              <x>427</x>
+              <y>563</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>((a or b) and (b imply c))</formula>
+                <graphicalposition>
+                  <x>427</x>
+                  <y>537</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(((a or b) and (b imply c)) and (a imply c))</formula>
+                    <graphicalposition>
+                      <x>427</x>
+                      <y>511</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(c or d)</formula>
+            <graphicalposition>
+              <x>781</x>
+              <y>563</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>781</x>
+                  <y>548</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(a imply c)</formula>
+                    <graphicalposition>
+                      <x>751</x>
+                      <y>522</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>(((a or b) and (b imply c)) and (a imply c))</formula>
+                        <graphicalposition>
+                          <x>751</x>
+                          <y>496</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>a</formula>
+                    <graphicalposition>
+                      <x>943</x>
+                      <y>533</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(c or d)</formula>
+            <graphicalposition>
+              <x>1165</x>
+              <y>563</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>c</formula>
+                <graphicalposition>
+                  <x>1165</x>
+                  <y>548</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(b imply c)</formula>
+                    <graphicalposition>
+                      <x>1135</x>
+                      <y>522</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>((a or b) and (b imply c))</formula>
+                        <graphicalposition>
+                          <x>1135</x>
+                          <y>496</y>
+                        </graphicalposition>
+                        <children>
+                          <proofnode>
+                            <formula>(((a or b) and (b imply c)) and (a imply c))</formula>
+                            <graphicalposition>
+                              <x>1135</x>
+                              <y>470</y>
+                            </graphicalposition>
+                            <children />
+                          </proofnode>
+                        </children>
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>b</formula>
+                    <graphicalposition>
+                      <x>1327</x>
+                      <y>528</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

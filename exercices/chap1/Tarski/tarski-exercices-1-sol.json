@@ -1,0 +1,161 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-1",
+    "question" : "L'objet a est grand et situé à gauche d'un objet petit.",
+    "formulaText" : "  Large(a)\n&\n  #x.\n  (\n      Small(x)\n    &\n      LeftOf(a,x)\n  )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "a",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 3,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "a",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "2.\tIl n'existe pas de carré qui n'est pas petit.",
+    "formulaText" : "not\n    #x.\n    (\n        Square(x)\n      &\n        not\n            Small(x)\n    )\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "S'il existe un carré petit, alors il existe aussi un grand carré.",
+    "formulaText" : "   #x.\n   (\n       Small(x)\n     &\n       Square(x)\n   )\n=>\n   #x.\n   (\n       Large(x)\n     &\n       Square(x)\n   )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 6,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Soit tous les objets sont grands, soit ils sont tous petits.",
+    "formulaText" : "   !x.\n   (\n     Small(x)\n   )\nor\n   !x.\n   (\n     Large(x)\n   )\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-5",
+    "question" : "Un objet grand est un carré, un objet petit est un pentagone.",
+    "formulaText" : "!x.\n(\n    (\n         Large(x)\n      =>\n         Square(x)\n    )\n  &\n    (\n         Small(x)\n      =>\n         Pentagon(x)\n    )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-6",
+    "question" : "Il n'y a pas de carré petit. Vous devez utiliser un quantificateur ∃.",
+    "formulaText" : "not\n    #x.\n    (\n        Small(x)\n      &\n        Square(x)\n    )\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-7",
+    "question" : "Écrivez la phrase 6. sans utiliser un quantificateur ∃.",
+    "formulaText" : "!x.\n(\n     Square(x)\n  =>\n     not\n         Small(x)\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-8",
+    "question" : "Tous les grands carrés sont situés à droite de tous les pentagones petits.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n       (\n           Square(x)\n         &\n           Large(x)\n         &\n           Pentagon(y)\n         &\n           Small(y)\n       )\n    =>\n       LeftOf(y,x)\n  )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-9",
+    "question" : "Une condition nécessaire pour l'existence d'un carré est qu'il existe au moins deux pentagones.",
+    "formulaText" : "   #x.\n   (\n     Square(x)\n   )\n=>\n   #y.\n   (\n     #z.\n     (\n         Pentagon(y)\n       &\n         Pentagon(z)\n       &\n         not\n             y = z\n     )\n   )\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-10",
+    "question" : "Une condition suffisante pour l'existence d'un carré est qu'il existe au moins deux pentagones.",
+    "formulaText" : "   #y.\n   (\n     #z.\n     (\n         Pentagon(y)\n       &\n         Pentagon(z)\n       &\n         not\n             y = z\n     )\n   )\n=>\n   #x.\n   (\n     Square(x)\n   )\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-11",
+    "question" : "Une condition suffisante et nécessaire pour l'existence d'un carré est qu'il existe au moins deux pentagones.",
+    "formulaText" : "#x.\n(\n      Square(x)\n  <=>\n      #y.\n      (\n        #z.\n        (\n            Pentagon(y)\n          &\n            Pentagon(z)\n          &\n            not\n                y = z\n        )\n      )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-12",
+    "question" : "Chaque carré est situé entre une paire de triangles, sur la même ligne que ces triangles.",
+    "formulaText" : "!x.\n(\n     Square(x)\n  =>\n     #y.\n     (\n       #z.\n       (\n           Triangle(y)\n         &\n           Triangle(z)\n         &\n           SameRow(y,z)\n         &\n           Between(x,y,z)\n       )\n     )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-13",
+    "question" : "Il existe une paire de triangles situés sur une même ligne, telle que tous les carrés sont situés également sur cette même ligne et entre ces deux triangles.",
+    "formulaText" : "#y.\n(\n  #z.\n  (\n      Triangle(y)\n    &\n      Triangle(z)\n    &\n      SameRow(y,z)\n    &\n      x /= y\n    &\n      !x.\n      (\n           Square(x)\n        =>\n           Between(x,y,z)\n      )\n  )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-14",
+    "question" : "Les objets d'une ligne sont ordonnés comme suit: les carrés, ensuite les triangles et finalement les pentagones.  Cela prévaut pour chaque ligne.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n       SameRow(x,y)\n    =>\n       (\n           (\n                (\n                    Square(x)\n                  &\n                    Triangle(y)\n                )\n             =>\n                LeftOf(x,y)\n           )\n         &\n           (\n                (\n                    Square(x)\n                  &\n                    Pentagon(y)\n                )\n             =>\n                LeftOf(x,y)\n           )\n         &\n           (\n                (\n                    Triangle(x)\n                  &\n                    Pentagon(y)\n                )\n             =>\n                LeftOf(x,y)\n           )\n       )\n  )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-15",
+    "question" : "Il existe exactement un carré petit. Vous devez utiliser un ∃ et un ∀ pour formuler cette phrase.",
+    "formulaText" : "#x.\n(\n    Square(x)\n  &\n    Small(x)\n  &\n    !y.\n    (\n         (\n             Square(y)\n           &\n             Small(y)\n         )\n      =>\n         x = y\n    )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-16",
+    "question" : "Il existe exactement un carré petit. Vous ne devez pas utiliser un ∀ pour formuler cette phrase.",
+    "formulaText" : "#x.\n(\n    Square(x)\n  &\n    Small(x)\n  &\n    not\n        #y.\n        (\n            Square(y)\n          &\n            Small(y)\n          &\n            not\n                x = y\n        )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-17",
+    "question" : "Les objets d'une même ligne sont triés en ordre croissant de taille.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n       (\n           SameRow(x,y)\n         &\n           LeftOf(x,y)\n       )\n    =>\n       not\n           Smaller(y,x)\n  )\n)\n",
+    "worlds" : [ ]
+  }, {
+    "formulaName" : "Formula-18",
+    "question" : "Il existe un carré entre chaque paire de triangles situés sur la même ligne.",
+    "formulaText" : "!x.\n(\n  !y.\n  (\n         Triangle(x)\n       &\n         Triangle(y)\n       &\n         SameRow(x,y)\n       &\n         x /= y\n    =>\n       #z.\n       (\n           Square(z)\n         &\n           SameRow(x,z)\n         &\n           Between(z,x,y)\n       )\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    } ]
+  } ]
+}

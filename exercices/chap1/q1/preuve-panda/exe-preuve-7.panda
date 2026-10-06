@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>(((not q) imply (not p)) imply (p imply q))</formula>
+    <graphicalposition>
+      <x>562</x>
+      <y>455</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>(p imply q)</formula>
+        <graphicalposition>
+          <x>562</x>
+          <y>429</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>q</formula>
+            <graphicalposition>
+              <x>562</x>
+              <y>410</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(not (not q))</formula>
+                <graphicalposition>
+                  <x>562</x>
+                  <y>391</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>bottom</formula>
+                    <graphicalposition>
+                      <x>562</x>
+                      <y>371</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>p</formula>
+                        <graphicalposition>
+                          <x>451</x>
+                          <y>352</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                      <proofnode>
+                        <formula>(not p)</formula>
+                        <graphicalposition>
+                          <x>592</x>
+                          <y>352</y>
+                        </graphicalposition>
+                        <children>
+                          <proofnode>
+                            <formula>((not q) imply (not p))</formula>
+                            <graphicalposition>
+                              <x>555</x>
+                              <y>326</y>
+                            </graphicalposition>
+                            <children />
+                          </proofnode>
+                          <proofnode>
+                            <formula>(not q)</formula>
+                            <graphicalposition>
+                              <x>666</x>
+                              <y>333</y>
+                            </graphicalposition>
+                            <children />
+                          </proofnode>
+                        </children>
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

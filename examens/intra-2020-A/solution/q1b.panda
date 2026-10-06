@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((((a or b) imply c) and b) imply c)</formula>
+    <graphicalposition>
+      <x>572</x>
+      <y>492</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>c</formula>
+        <graphicalposition>
+          <x>572</x>
+          <y>477</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>((a or b) imply c)</formula>
+            <graphicalposition>
+              <x>463</x>
+              <y>451</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(((a or b) imply c) and b)</formula>
+                <graphicalposition>
+                  <x>463</x>
+                  <y>425</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>(a or b)</formula>
+            <graphicalposition>
+              <x>681</x>
+              <y>451</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>b</formula>
+                <graphicalposition>
+                  <x>681</x>
+                  <y>431</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>(((a or b) imply c) and b)</formula>
+                    <graphicalposition>
+                      <x>681</x>
+                      <y>405</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

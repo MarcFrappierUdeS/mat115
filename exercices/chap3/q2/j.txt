@@ -1,0 +1,150 @@
+﻿Théorème
+
+Soit S,T des ensembles, f : S +-> T
+
+  f : S >-> T <=> !(x,y).(x:S & y:T => (f(x)=f(y) => x=y)) & dom(f)=S
+
+Preuve
+
+Supposons
+
+(H0)  f : S +-> T 
+
+Prouvons
+
+    f : S >-> T <=> !(x,y).(x:S & y:T => (f(x)=f(y) => x=y)) & dom(f)=S
+
+Prouvons la direction (=>)
+
+Supposons
+
+(H1)  f : S >-> T 
+
+Montrons
+
+(G1)  dom(f)=S
+(G2)  !(x,y).(x:S & y:T => (f(x)=f(y) => x=y))
+
+Preuve de (G1)
+
+  (H1)
+<=>   { def. de >-> tableau 2.6 }
+  f : S >+> T & dom(f) = S
+=>
+  (G1)
+
+Preuve de (G2)
+
+Supposons
+
+(H2)  x:S & y:T
+(H3)  f(x)=f(y) 
+
+et montrons
+
+(G3)  x=y
+
+  (H1)
+=>    { def. >-> }
+  f : S >+> T
+=>    { def. >+> }
+  f~ : T +-> S
+=>    { def. +-> }
+  f~~;f~ <: id(S)
+=>    { f~~=f}
+(D1) f;f~ <: id(S) 
+
+Finalement,
+
+  (H3)
+=>    { Leibniz avec f~}
+  f~(f(x))=f~(f(y))
+=>    { (D1) }
+  (G3)
+
+Ce qui complète la preuve de la direction (=>)
+
+Prouvons la direction (<=)
+
+Supposons
+
+(H1)  !(x,y).(x:S & y:T => (f(x)=f(y) => x=y)) 
+(H2)  dom(f)=S 
+
+Prouvons
+
+(G0)  f : S >-> T 
+
+  (G0)
+<=>   { def. >->}
+ (G1)   f : S >+> T
+ (G2) & dom(f)=S 
+
+Puisque (G2) = (H2), il ne reste qu'à prouver (G1).
+
+  (G1)
+<=>       { def. >+> }
+(G3)   f : S +-> T
+(G4) & f~ : T +-> S 
+
+Par (H0), nous avons (G3). Il reste à prouver (G4)
+
+  (G4)
+<=>    { def. de +-> }
+  f~~;f~ <: id(S) 
+<=>    { f~~=f}
+  f;f~ <: id(S)
+<=>   { déf. <: tableau 2.3 }
+(G5) !(x,y).(x|->y : f;f~ => x|->y : id(S)) 
+
+Prouvons (G5). Supposons
+
+(H3)  x|->y : f;f~ 
+(H4)  x,y : S  (provient de H2)
+
+et montrons
+
+(G6)  x|->y : id(S) 
+
+  (H3)
+<=>
+  #z. x|->z : f & z|->y : f~
+<=>
+(D2) #z. x|->z : f & y|->z : f 
+
+Par la règle E# sur (D2), on obtient
+
+(H5)  x|->z : f & y|->z : f 
+
+  (H5)
+<=>     { x|->z : f <=> f(x)=z }
+  f(x)=z & f(y)=z
+=>      { transitivité de "=" }
+(D4) f(x) = f(y) 
+
+  (H1) & (H4) & (D4)
+=>
+  x=y 
+=>    { Leibniz avec x|-> }
+(D7) x|->x = x|->y
+
+  (H4)
+=>    { def. id }
+  x|->x : id(S)
+=>    { (D7) }
+  (G6)
+
+CQFD
+
+
+
+
+
+
+
+
+
+
+
+
+

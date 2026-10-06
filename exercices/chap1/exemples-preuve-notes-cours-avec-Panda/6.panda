@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proofs>
+  <proofnode>
+    <formula>((p and (q or r)) imply ((p and q) or (p and r)))</formula>
+    <graphicalposition>
+      <x>494</x>
+      <y>477</y>
+    </graphicalposition>
+    <children>
+      <proofnode>
+        <formula>((p and q) or (p and r))</formula>
+        <graphicalposition>
+          <x>494</x>
+          <y>451</y>
+        </graphicalposition>
+        <children>
+          <proofnode>
+            <formula>(q or r)</formula>
+            <graphicalposition>
+              <x>277</x>
+              <y>425</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p and (q or r))</formula>
+                <graphicalposition>
+                  <x>277</x>
+                  <y>399</y>
+                </graphicalposition>
+                <children />
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>((p and q) or (p and r))</formula>
+            <graphicalposition>
+              <x>465</x>
+              <y>425</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p and q)</formula>
+                <graphicalposition>
+                  <x>465</x>
+                  <y>399</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>p</formula>
+                    <graphicalposition>
+                      <x>435</x>
+                      <y>380</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>(p and (q or r))</formula>
+                        <graphicalposition>
+                          <x>435</x>
+                          <y>354</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>q</formula>
+                    <graphicalposition>
+                      <x>544</x>
+                      <y>380</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+          <proofnode>
+            <formula>((p and q) or (p and r))</formula>
+            <graphicalposition>
+              <x>683</x>
+              <y>425</y>
+            </graphicalposition>
+            <children>
+              <proofnode>
+                <formula>(p and r)</formula>
+                <graphicalposition>
+                  <x>683</x>
+                  <y>399</y>
+                </graphicalposition>
+                <children>
+                  <proofnode>
+                    <formula>p</formula>
+                    <graphicalposition>
+                      <x>654</x>
+                      <y>380</y>
+                    </graphicalposition>
+                    <children>
+                      <proofnode>
+                        <formula>(p and (q or r))</formula>
+                        <graphicalposition>
+                          <x>654</x>
+                          <y>354</y>
+                        </graphicalposition>
+                        <children />
+                      </proofnode>
+                    </children>
+                  </proofnode>
+                  <proofnode>
+                    <formula>r</formula>
+                    <graphicalposition>
+                      <x>762</x>
+                      <y>384</y>
+                    </graphicalposition>
+                    <children />
+                  </proofnode>
+                </children>
+              </proofnode>
+            </children>
+          </proofnode>
+        </children>
+      </proofnode>
+    </children>
+  </proofnode>
+</proofs>
+

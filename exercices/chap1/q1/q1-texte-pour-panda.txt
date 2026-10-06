@@ -1,0 +1,17 @@
+1- (((p or q) and (p or r)) imply (p or (q and r)))
+
+2- (((p and q) or (p and r)) imply (p and (q or r)))
+
+3- ((p and q) imply (p and ((not p) or q)))
+
+4- ((not (not p)) imply p)
+
+5- (p imply (not (not p)))
+
+6- ((p imply q) imply ((not q) imply (not p)))
+
+7- (((not q) imply (not p)) imply (p imply q))
+
+8- (((not p) and (not q)) imply (not (p or q)))
+
+9- (((not p) or (not q)) imply (not (p and q)))
