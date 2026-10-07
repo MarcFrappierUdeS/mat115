@@ -15,7 +15,9 @@
 # Semaine du 5 octobre
 
 - Lire section 2.4 des [notes de cours](https://github.com/MarcFrappierUdeS/mat115/blob/main/logique.pdf)
-- Visionner le [video](https://usherbrooke-my.sharepoint.com/:v:/g/personal/fram1801_usherbrooke_ca/IQBJzcn56dm2Rag5suVTmnVuAS_ZHn5B_a6BS4h1Id817P4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3x9WxJ) du cours de cette semaine- Voir les [exemples des opérateurs relationnels](https://github.com/MarcFrappierUdeS/mat115/blob/main/ref/resume-ens-rel-fonction-abrial.pdf)
+- Voir les [exemples des opérateurs relationnels](https://github.com/MarcFrappierUdeS/mat115/blob/main/ref/resume-ens-rel-fonction-abrial.pdf)
+- Visionner le [video](https://usherbrooke-my.sharepoint.com/:v:/g/personal/fram1801_usherbrooke_ca/IQBJzcn56dm2Rag5suVTmnVuAS_ZHn5B_a6BS4h1Id817P4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3x9WxJ) du cours du 8 octobre
+- Regarder les [exemples](https://github.com/MarcFrappierUdeS/mat115/blob/main/exercices/chap2/q2/q2-version-cours-2026-10-08.mch) construits durant le cours du 8 octobre
 - Laboratoire du vendredi
     - Débuter le [devoir 3](https://github.com/MarcFrappierUdeS/mat115/tree/main/devoirs/devoir3)
     - Débuter les [exercices du chapitre 2](https://github.com/MarcFrappierUdeS/mat115/blob/main/logique.pdf)
