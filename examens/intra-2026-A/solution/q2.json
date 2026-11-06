@@ -1,0 +1,308 @@
+{
+  "formulas" : [ {
+    "formulaName" : "Formula-0",
+    "question" : "Si un objet est le plus grand de sa colonne, alors cet objet est un carré",
+    "formulaText" : "!x.\n(\n     !y.\n     (\n            x /= y\n          &\n            SameCol(x,y)\n       =>\n          Smaller(y,x)\n     )\n  =>\n     Square(x)\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-1",
+    "question" : "Les petits objets sont des carrés si, et seulement si, il existe une ligne qui ne contient que des pentagones",
+    "formulaText" : "    !x.\n    (\n         Small(x)\n      =>\n         Square(x)\n    )\n<=>\n    #x.\n    (\n        Pentagon(x)\n      &\n        !y.\n        (\n             SameRow(x,y)\n          =>\n             Pentagon(x)\n        )\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 3,
+        "blockSize" : "LARGE",
+        "blockType" : "PENTAGON"
+      } ]
+    }, {
+      "worldName" : "World-3",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-2",
+    "question" : "Une condition nécessaire pour que tous les petits carrés soient à la gauche de tous les pentagones est l'existence d'un petit carré",
+    "formulaText" : "   !x.\n   (\n     !y.\n     (\n            Small(x)\n          &\n            Square(x)\n          &\n            Pentagon(y)\n       =>\n          LeftOf(x,y)\n     )\n   )\n=>\n   #x.\n   (\n       Square(x)\n     &\n       Small(x)\n   )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 5,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 6,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 7,
+        "gridPosY" : 1,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 1,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-3",
+    "question" : "Il existe deux objets qui ne sont pas des carrés, et qui sont sur la même colonne, et il sont à gauche de tous les petits carrés",
+    "formulaText" : "#x.\n(\n  #y.\n  (\n      x /= y\n    &\n      not\n          Square(x)\n    &\n      not\n          Square(y)\n    &\n      SameCol(x,y)\n    &\n      !z.\n      (\n             Square(z)\n           &\n             Small(z)\n        =>\n           LeftOf(x,z)\n      )\n  )\n)\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "PENTAGON"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 3,
+        "blockSize" : "MEDIUM",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : false,
+      "blocks" : [ {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 1,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 0,
+        "gridPosY" : 2,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  }, {
+    "formulaName" : "Formula-4",
+    "question" : "Soit l'objet a est un carré, soit tous les objets sont des grands triangles",
+    "formulaText" : "not\n    (\n          Square(a)\n      <=>\n          !x.\n          (\n              Large(x)\n            &\n              Triangle(x)\n          )\n    )\n",
+    "worlds" : [ {
+      "worldName" : "World-0",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "a",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "SMALL",
+        "blockType" : "SQUARE"
+      }, {
+        "name" : "",
+        "gridPosX" : 1,
+        "gridPosY" : 2,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-1",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "a",
+        "gridPosX" : 1,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      }, {
+        "name" : "",
+        "gridPosX" : 2,
+        "gridPosY" : 4,
+        "blockSize" : "LARGE",
+        "blockType" : "TRIANGLE"
+      } ]
+    }, {
+      "worldName" : "World-2",
+      "worldShouldPass" : true,
+      "blocks" : [ {
+        "name" : "a",
+        "gridPosX" : 0,
+        "gridPosY" : 0,
+        "blockSize" : "LARGE",
+        "blockType" : "SQUARE"
+      } ]
+    } ]
+  } ]
+}
